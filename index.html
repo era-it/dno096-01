@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+      <style> /*CSS (STYLE) COMENTARIOS VAN ASÍ*/ 
+          html, body {
+              margin: 0;
+              padding: 0;
+              cursor: crosshair;
+}
+          canvas {
+              display: block;
+              
+}
+          h1{
+              position: absolute;
+              top: 1rem;
+              left: 3rem;
+              z-index: 2; /*DIRECCIÓN HACIA MI*/
+          }
+          p{
+              position: absolute; /*se colocará donde yo lo defino acá abajo*/ 
+              width: 50vw; /*vw= la vista completa. 50vw= mitad de la pantalla */
+              top: 4rem;
+              left: 3rem; /*REM = contexto definido al principio, se adapta a la pantalla (?)*/
+              z-index: 2;
+          }
+ 
+      </style>
+    <meta charset="utf-8" />
+
+  </head>
+  <body> 
+    <main>
+        <!-- comentarios en body es así -->
+        <h1> Hola mundo! :) </h1>
+        <p> Tomé este curso porque antes tomé programación creativa y me gustó, además me faltaba 1 opr por tomar :p </p>
+    </main>
+    <script> 
+        function setup(){
+            createCanvas(windowWidth, windowHeight);
+            background(50,100,100);
+            stroke(100);
+            
+            function draw () {
+                line(pmouseX, pmouseY, mouseX, mouseY);
+            }
+            
+        }
+      
+      </script>
+  </body>
+</html>
